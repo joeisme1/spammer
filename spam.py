@@ -14,7 +14,7 @@ def send():
     mail.starttls()
     mail.ehlo()
     mail.login(uname, pword)
-    msg = f'Subject: {subject}/n/n{message}'
+    msg = f'Subject: {subject}n/n/{message}'
     mail.sendmail(uname, tget, msg)
     mail.close()
     num + 1
